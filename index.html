@@ -1,116 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Dev Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .description {
+        color: #555;
+        line-height: 1.6;
+      }
+      nav ul li a {
+        transition: color 0.3s;
+      }
+      nav ul li a:hover {
+        color: #f59e0b; /* Tailwind amber-500 */
+      }
+    </style>
+  </head>
 
-    <!-- Google font -->
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <body class="bg-gray-50">
 
-     <!-- Style Sheet Link -->
-      <link rel="stylesheet" href="style.css">
-      
-    <title>Kz_Himel Portfolio</title>
-</head>
-<body class="font-open-sans">
-    
-    <!-- Header -->
-     <header>
-        <nav>
-            <div class="logo">
-                <h2>K<span class="color-orange">z_H</span>imel</h2>
-            </div>
-
-            <ul class="menu">
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Blog</a></li>
-                <li><button class="btn">Hire me</button></li>
-            </ul>
-        </nav>
-
-        <section id="hero">
-            <div class="hero-content">
-                <h2>Hi, I am</h2>
-                <h1>Kz_Himel</h1>
-                <p>Shot what able cold new see hold, Friendly as an btrayed formerly he. Morning because as to society behaved moments.</p>
-
-                <div class="buttons">
-                    <button class="btn">Download CV</button>
-                    <button class="btn">Contact</button>
-                </div>
-            </div>
-
-            <div class="hero-img">
-                <img src="images/hardy.png" alt="">
-            </div>
-        </section>
-
-     </header>
-
-     <!-- About section -->
-     <section id="about">
-        <div class="about-container">
-            <div class="section-heading">
-                <h2>About me</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque neque recusandae veniam maxime blanditiis praesentium tenetur corporis odio officia labore! Laboriosam cumque obcaecati culpa harum facilis in atque aliquam molestiae!</p>
-            </div>
-
-            <div class="about-info">
-                <div class="info-card">
-                    <p>Name:</p>
-                    <h4>Kz Himel</h4>
-                </div>
-                <div class="info-card">
-                    <p>Email:</p>
-                    <h4>kzhimel129@gmail.com</h4>
-                </div>
-                <div class="info-card">
-                    <p>Date of birth:</p>
-                    <h4>26 September 2007</h4>
-                </div>
-                <div class="info-card">
-                    <p>From:</p>
-                    <h4>Rangpur, Bangladesh</h4>
-                </div>
-            </div>
+    <!-- Header / Hero -->
+    <header class="bg-gray-900 text-white">
+      <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <div class="text-2xl font-bold">Kz<span class="text-amber-500"> Hi</span>mel</div>
+        <ul class="flex gap-6 items-center">
+          <li><a href="#about" class="hover:text-amber-500">About Me</a></li>
+          <li><a href="#projects" class="hover:text-amber-500">Projects</a></li>
+          <li><a href="#blog" class="hover:text-amber-500">Blog</a></li>
+          <li><a href="#contact" class="hover:text-amber-500">Contact</a></li>
+          <li><button class="bg-amber-500 text-white px-4 py-2 rounded hover:bg-amber-600 transition">Hire Me</button></li>
+        </ul>
+      </nav>
+      <section id="hero" class="max-w-6xl mx-auto flex flex-col md:flex-row items-center p-8 md:p-16">
+        <div class="flex-1 mb-8 md:mb-0">
+          <h2 class="text-xl">Hi, I am</h2>
+          <h1 class="text-5xl font-bold mb-4">Khayruzzaman Himel</h1>
+          <p class="description mb-6">Designer & Developer passionate about web development. I enjoy building clean, interactive, and responsive websites.</p>
+          <div class="flex gap-4">
+            <button class="bg-amber-500 text-white px-4 py-2 rounded hover:bg-amber-600 transition">Download CV</button>
+            <button class="border border-white px-4 py-2 rounded hover:bg-white hover:text-gray-900 transition">Contact</button>
+          </div>
         </div>
-     </section>
-
-     <!-- Skills section -->
-     <div id="skills">
-        <div class="skills-container">
-            <div class="section-heading">
-                <h2>What I do</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium quis consectetur, fugit nesciunt molestias omnis a adipisci placeat doloribus praesentium eos atque mollitia provident voluptates totam. Quis, nisi minima.
-                </p>
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-card">
-                    <img src="images/icons/js.png" alt="">
-                    <h3>Vanilla JavaScript</h3>
-                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/icons/react.png" alt="">
-                    <h3>React</h3>
-                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/icons/nodejs.png" alt="">
-                    <h3>Node.js</h3>
-                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/icons/mongo.png" alt="">
-                    <h3>MongoDB</h3>
-                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-            </div>
+        <div class="flex-1">
+          <img src="images/hardy.png" alt="Hero Image" class="rounded-lg shadow-lg w-full" />
         </div>
-     </div>
+      </section>
+    </header>
 
+    <!-- About Me Section -->
+    <section id="about" class="max-w-6xl mx-auto p-8 md:p-16">
+      <h2 class="section-title text-center">About Me</h2>
+      <p class="description text-center mb-8">I’m a designer & developer with a passion for web design. I enjoy building simple, clean, and interactive websites that provide real value to the end user.</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <div><span class="font-bold">Name:</span> Khayruzzaman Himel</div>
+          <div><span class="font-bold">Email:</span> kzhimel129@gmail.com</div>
+          <div><span class="font-bold">Date of Birth:</span> 26 September 2005</div>
+          <div><span class="font-bold">From:</span> Dhaka, Bangladesh</div>
+        </div>
+        <div>
+          <img src="images/about-me.png" alt="About Me" class="rounded-lg shadow-lg w-full" />
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Services / Skills Section -->
+    <section id="services" class="max-w-6xl mx-auto p-8 md:p-16 bg-gray-100">
+      <h2 class="section-title text-center">What I Do</h2>
+      <p class="description text-center mb-12">I have experience building software for clients all over the world. Below is a quick overview of my main technical skills.</p>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-2xl transition">
+          <img src="./images/icons/js.png" alt="JS" class="w-16 mx-auto mb-4">
+          <h4 class="font-semibold mb-2 text-center">Vanilla JavaScript</h4>
+          <p class="text-gray-600 text-sm text-center">Modern JS and DOM manipulation skills.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-2xl transition">
+          <img src="./images/icons/react.png" alt="React" class="w-16 mx-auto mb-4">
+          <h4 class="font-semibold mb-2 text-center">React</h4>
+          <p class="text-gray-600 text-sm text-center">Building responsive and interactive UI.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-2xl transition">
+          <img src="./images/icons/nodejs.png" alt="NodeJS" class="w-16 mx-auto mb-4">
+          <h4 class="font-semibold mb-2 text-center">Node.js</h4>
+          <p class="text-gray-600 text-sm text-center">Server-side development and APIs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-2xl transition">
+          <img src="./images/icons/mongo.png" alt="MongoDB" class="w-16 mx-auto mb-4">
+          <h4 class="font-semibold mb-2 text-center">MongoDB</h4>
+          <p class="text-gray-600 text-sm text-center">NoSQL database management.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+   <section id="resume" class="max-w-6xl mx-auto p-8 md:p-16">
+  <h2 class="section-title text-center">Resume</h2>
+
+  <div class="grid md:grid-cols-2 gap-12 mt-12">
+    <!-- Left column: Education + Skills -->
+    <div class="space-y-10">
+      <div>
+        <h3 class="font-bold text-2xl mb-6">Education</h3>
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-semibold text-xl">Student of Computer Science</h4>
+            <h5 class="text-gray-600 mt-1">Rangpur Polytechnic Institute</h5>
+            <p class="mt-2 text-gray-700">
+              Relevant coursework: Web Programming, Data Structures, Database Systems.
+            </p>
+          </div>
+
+          <!-- Add if you have -->
+          <!-- <div>
+            <h4 class="font-semibold text-xl">Meta Front-End Developer Professional Certificate</h4>
+            <h5 class="text-gray-600 mt-1">Coursera / 2024</h5>
+            <p class="mt-2 text-gray-700">HTML, CSS, JavaScript, React, Version Control with Git</p>
+          </div> -->
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-2xl mb-6">Skills</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-700">
+          <div>HTML5</div>
+          <div>CSS3 / Tailwind CSS</div>
+          <div>JavaScript (ES6+)</div>
+          <div>React.js</div>
+          <div>Responsive Design</div>
+          <div>Git & GitHub</div>
+          <div>Bootstrap</div>
+          <div>Figma / UI Design</div>
+          <div>REST APIs</div>
+          <!-- Add more that you actually know and have used in projects -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: Projects (most important for freshers) + any internships/freelance -->
+    <div>
+      <h3 class="font-bold text-2xl mb-6">Projects</h3>
+      <div class="space-y-8">
+        <div>
+          <h4 class="font-semibold text-xl">Personal Portfolio Website</h4>
+          <h5 class="text-gray-600 mt-1">2025 – Present</h5>
+          <p class="mt-2 text-gray-700">
+            Built a responsive personal portfolio showcasing my projects and skills using HTML, Tailwind CSS, and JavaScript.
+            Implemented smooth scrolling, dark mode toggle, and mobile-first design.
+          </p>
+          <p class="mt-1 text-sm">
+            <span class="font-medium">Tech:</span> HTML, Tailwind CSS, JavaScript, Vite
+          </p>
+          <a href="https://github.com/yourusername/portfolio" class="text-blue-600 hover:underline text-sm mt-1 inline-block">
+            View on GitHub →
+          </a>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-xl">Payoo App</h4>
+          <h5 class="text-gray-600 mt-1">2026</h5>
+          <p class="mt-2 text-gray-700">
+            Developed a dynamic product listing and detail page with cart functionality and responsive layout.
+            Fetched data from a mock API and handled state with React hooks.
+          </p>
+          <p class="mt-1 text-sm">
+            <span class="font-medium">Tech:</span> Html, Tailwind CSS, Daisy UI, Javascript, API.
+          </p>
+          <a href="#" class="text-blue-600 hover:underline text-sm mt-1 inline-block">
+            Live Demo →  |  GitHub →
+          </a>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-xl">English Janala</h4>
+          <h5 class="text-gray-600 mt-1">2026</h5>
+          <p class="mt-2 text-gray-700">
+            An English learning app for beginners. forecast using API.
+            Features search by word, unit toggle, and clean UI.
+          </p>
+          <p class="mt-1 text-sm">
+            <span class="font-medium">Tech:</span> HTML, CSS, JavaScript, Fetch API, Tailwind CSS, Daisy UI.
+          </p>
+          <a href="#" class="text-blue-600 hover:underline text-sm mt-1 inline-block">
+            Live Demo →  |  GitHub →
+          </a>
+        </div>
+
+        <!-- Add 1–2 more real projects you actually built -->
+      </div>
+
+      <!-- Optional small section if you have any real experience -->
+      <!-- <div class="mt-10">
+        <h3 class="font-bold text-2xl mb-6">Experience</h3>
+        <div>
+          <h4 class="font-semibold">Front-End Development Intern</h4>
+          <h5 class="text-gray-600">Local Startup / Summer 2024</h5>
+          <p class="mt-2 text-gray-700">
+            Converted Figma designs to responsive web pages • Fixed UI bugs • Collaborated using Git
+          </p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Optional bottom note -->
+  <div class="text-center mt-16 text-gray-600">
+    <p>Full resume available on request • GitHub: github.com/yourusername • LinkedIn: linkedin.com/in/yourname</p>
+  </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="section-title text-center mb-12">Projects</h2>
+        <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <img src="images/payoo.png" alt="Project 1" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">Payoo App</h3>
+              <p class="text-gray-700 mb-4">A payment tracking app using JS, HTML, CSS.</p>
+              <a href="https://kz-himel.github.io/Payoo-app/" class="text-blue-600 hover:underline">View Project →</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <img src="images/english-janala.png" alt="Project 2" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">English Janala</h3>
+              <p class="text-gray-700 mb-4">An English learning app for beginners.</p>
+              <a href="https://kz-himel.github.io/English-Janala/
+" class="text-blue-600 hover:underline">View Project →</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <img src="images/github-issue.png" alt="Project 3" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-2">Github Issue Tracker</h3>
+              <p class="text-gray-700 mb-4">Track github issues.</p>
+              <a href="https://kz-himel.github.io/Assignment_5/
+" class="text-blue-600 hover:underline">View Project →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="section-title text-center mb-12">Blog</h2>
+        <div class="space-y-6">
+          <div class="p-6 bg-gray-50 rounded-lg shadow hover:bg-gray-100 transition-all">
+            <a href="#" class="text-xl font-semibold text-blue-700 hover:underline">Learning JavaScript in 2026</a>
+            <p class="text-gray-600 mt-2">Tips and tricks to level up your JavaScript skills in ES2026.</p>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-lg shadow hover:bg-gray-100 transition-all">
+            <a href="#" class="text-xl font-semibold text-blue-700 hover:underline">Why Tailwind CSS Rocks</a>
+            <p class="text-gray-600 mt-2">A deep dive into Tailwind CSS for rapid UI development.</p>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-lg shadow hover:bg-gray-100 transition-all">
+            <a href="#" class="text-xl font-semibold text-blue-700 hover:underline">Web Development Tips & Tricks</a>
+            <p class="text-gray-600 mt-2">Best practices and shortcuts for modern web development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="max-w-2xl mx-auto px-6 text-center">
+        <h2 class="section-title mb-8">Contact Me</h2>
+        <form id="contactForm" class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+          <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+          <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" rows="5" required></textarea>
+          <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-all">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for contacting me!');
+        form.reset();
+      });
+    </script>
+
+  </body>
 </html>
